@@ -29,7 +29,7 @@ public:
     }
 
     // Заполняет таблицу случайными числами в заданном диапазоне и выводит в консоль
-    void FillRandom(T min_value, T max_value) {
+    void fillRandom(T min_value, T max_value) {
         std::srand((std::time(nullptr)));  
         for (int i = 0; i < rows_; ++i) {
             for (int j = 0; j < cols_; ++j) {
@@ -45,7 +45,7 @@ int main() {
     system("chcp 1251");
     Table<int> table(3, 4);
 
-    table.FillRandom(1, 9);
+    table.fillRandom(1, 9);
 
     std::pair<int, int> size = table.Size();
     std::cout << "Число строк: " << size.first << std::endl;
