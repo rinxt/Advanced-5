@@ -45,15 +45,13 @@ int main() {
     system("chcp 1251");
     Table<int> table(3, 4);
 
-    // Заполнение таблицы и вывод элементов
     table.FillRandom(1, 9);
 
-    // Получение размера таблицы
     std::pair<int, int> size = table.Size();
     std::cout << "Число строк: " << size.first << std::endl;
     std::cout << "Число столбцов: " << size.second << std::endl;
 
-    std::cout << "Элемент [0][0]: " << table[0][0]; // выводит 4
+    std::cout << "Элемент [0][0]: " << table[0][0]; 
 
     return 0;
 }
